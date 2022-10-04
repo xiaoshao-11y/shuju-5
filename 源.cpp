@@ -167,7 +167,7 @@ int main() {
 	return 0;
 }
 
-
+//3.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -268,7 +268,7 @@ int main()
 }
 
 
-
+//4.
  #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -348,4 +348,20 @@ int main() {
 	    printf("+");
 	}
 	return 0;
+}
+//4.
+#include<cstdio>
+#include<cstring>
+using namespace std;
+#define m 2
+char c[15];
+int main()
+{
+ gets(c);
+ for (int i = 0;i < strlen(c);i++)
+ {
+  if (i != 0 && c[i] != '0') printf("+");
+  if (c[i] == '0') continue;
+  printf("%c*%d^%d", c[i], m, strlen(c) - i - 1);
+ }
 }
